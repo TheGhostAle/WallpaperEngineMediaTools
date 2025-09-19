@@ -10,36 +10,35 @@ These tools use **batch scripts and PowerShell** to send media key commands.
 ## Installation and Usage
 
 1. **Extract the folder** to a fixed location on your computer, for example:
-
 ```
 C:\Users\YourUser\Documents\WallpaperEngineMediaTools
 ```
 
-2. **Open Wallpaper Engine**, select the wallpaper, and go to **User Shortcuts**.
+2. **Generate the shortcuts**:
 
-3. **Add a new shortcut**:  
-   - In the **Run Command** field, enter the path to the batch file corresponding to the desired command:
+   - Double click `Generate Shortcuts.bat` in the project root.  
+   - This will create **shortcut files** inside the `shortcuts\` folder.  
 
+3. **Open Wallpaper Engine**, select the wallpaper, and go to **User Shortcuts**.
+
+4. **Add a new shortcut** in Wallpaper Engine:  
+   - In the **Run Command** field, enter the path to the shortcut.  
+
+Examples:
 
 - Play / Pause:
 ```
-C:\Users\YourUser\Documents\WallpaperEngineMediaTools\PlayPause.bat
-```
-- Next Track:
-```
-C:\Users\YourUser\Documents\WallpaperEngineMediaTools\NextTrack.bat
+C:\Users\YourUser\Documents\WallpaperEngineMediaTools\shortcuts\PlayPause.lnk
 ```
 
-- Previous Track:
+- Next Track:  
+
 ```
-C:\Users\YourUser\Documents\WallpaperEngineMediaTools\PreviousTrack.bat
+C:\Users\YourUser\Documents\WallpaperEngineMediaTools\shortcuts\NextTrack.lnk
 ```
 
+- Previous Track:  
 
-## Hiding the Terminal Window
-
-To prevent the CMD window from showing:
-
-1. Create a **shortcut (.lnk)** to the desired `.bat` file.  
-2. Right-click the shortcut → **Properties** → **Run** → **Minimized**.  
-3. Use the shortcut path in the **Run Command** field in Wallpaper Engine instead of the batch file directly.
+```
+C:\Users\YourUser\Documents\WallpaperEngineMediaTools\shortcuts\PreviousTrack.lnk
+```

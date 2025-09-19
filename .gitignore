@@ -1,0 +1,6 @@
+.vscode/
+.DS_Store
+*.lnk
+*.zip
+shortcuts/
+LICENSE
